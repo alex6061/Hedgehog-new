@@ -1,0 +1,114 @@
+.hero {
+  padding: 7px 0 48px;
+  background:  #eaeeef;
+
+  @media screen and (min-width: 321px) {
+    background: url('./../../../img/Subtract.png') no-repeat center / cover;
+    height: 1013px;
+    //background-size: auto auto;
+    background-origin: border-box;
+    position: relative;
+    background-size: 2040px;
+    //z-index: 999 !important;
+  }
+}
+
+
+
+.hero-title{
+  font-family: 'Cormorant Infant', serif;
+  font-size: 50px;
+  color: #195557;
+  @media screen and (min-width: 321px) {
+    display: block;
+    text-align: center;
+    font-size: 94px;
+    padding: 177px 0 19px;
+  }
+}
+.hero-title__about{
+  font-family: 'Cormorant Infant',serif;
+  color: #70908B;
+  text-transform: uppercase;
+  font-size: 24px;
+  Line-height: 29.06px;
+  margin-bottom: 7px;
+  @media screen and (min-width: 321px) {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+
+  }
+}
+.hero-title__info{
+  font-family: 'Raleway',sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 146.4%;
+  color: #70908B;
+  margin-bottom: 21px;
+  @media screen and (min-width: 321px) {
+    font-size: 14px;
+    text-align: center;
+    padding: 18px  0 34px;
+  }
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav_item {
+  display: flex;
+}
+
+.web_tel {
+  display: flex;
+}
+
+.hero-button {
+  display: block;
+  position: center;
+
+  width: 281px;
+  height: 59px;
+  background: #70908b ;
+  border-radius: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+}
+
+
+.header-nav__item__link--tel {
+  white-space: nowrap;
+  display: flex;
+  //justify-content: center;
+}
+
+.number {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Raleway',Arial,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+
+
+  text-transform: uppercase;
+
+  color: #195557;
+}
+

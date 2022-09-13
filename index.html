@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./JS.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--================================header+hero======================-->
+
+<section class="hero">
+    <div class="container big_container">
+        <div class="header">
+            <div class="big_container container">
+                <div class="header-wrapper">
+                    <!--===============================burger-menu======================-->
+
+                    <div class="header-burger">
+                        <span class="header-burger__span"></span>
+                    </div>
+
+
+                    <picture class="header-logo">
+
+                        <source srcset="img/logo_1x.png 1x,
+                                img/Logo2x.png 2x"
+                                media="(min-width: 320px"
+                        >
+
+                        <img src="./img/logo_1x.png" alt="" class="picture-logo">
+                    </picture>
+
+                    <ul class="header-menu">
+                        <li class="header-nav__item"><a href="" class="header-nav__item__link">Каталог</a></li>
+                        <li class="header-nav__item"><a href="" class="header-nav__item__link">о нас</a></li>
+                        <li class="header-nav__item"><a href="" class="header-nav__item__link">контакты</a></li>
+                        <li class="header-nav__item"><a href="" class="header-nav__item__link">галерея</a></li>
+                    </ul>
+                    <ul class="header-nav">
+                        <li class="header-nav_item">
+                            <div class="web_tel">
+                                <a href="" class="header-nav__item__link--tel">
+                                    <object class="tel" data="img/svg/header-tel.svg"></object>
+                                    <span class="number">+7 (965) 569-89-98</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header-nav_item">
+                            <a href="" class="header-nav__item__link--basket">
+                                <object class="basket_320" data="img/svg/basket.svg"></object>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+        <h1 class="hero-title">ЁЖИКИ</h1>
+        <h2 class="hero-title__about">тоже любят молоко</h2>
+        <p class="hero-title__info">Заведите себе ёжика. Он всегда выслушает, не  мяукать в 5 утра и царапать вашу мебель.</p>
+        <button class="hero-button">Купить ёжика</button>
+    </div>
+</section>
+
+<!--===========================section photo========================-->
+
+<section class="photo">
+<!--    <div class="big_container">-->
+        <img src="img/image%202.png" alt="" class="left_hedgehog">
+        <img src="img/image%203.png" alt="" class="right_hedgehog">
+    </div>
+</section>
+
+<section class="choice">
+    <div class="container">
+        <picture class="big-hedgehog">
+            <source srcset="./img/hedgehog.png 1x,
+                                                 ./img/hedgehog@2x.png 2x">
+            <img class="big-hedgehog" src="./img/hedgehog@2x.png" alt="hedgehog">
+        </picture>
+        <ul class="choice-wrapper">
+            <li class="choice-wrapper__item ">
+                <div class="first"><object class="inner-img__hedgehog" data="img/svg/hedgehog.svg"></object></div>
+                <h3 class="choice-wrapper__item__title">Разведение <br> ежиков</h3>
+                <p class="choice-wrapper__item__info">Собственная ферма, <br>уход и содержание</p>
+            </li>
+            <li class="choice-wrapper__item picture ">
+
+            </li>
+            <li class="choice-wrapper__item ">
+                <div class="third"><object class="inner-img__syringe" data="img/svg/syringe.svg"></object></div>
+                <h3 class="choice-wrapper__item__title">Здоровье</h3>
+                <p class="choice-wrapper__item__info">Всегда прививаем <br> и вовремя обследуем <br> ваших будущих питомцев</p>
+            </li>
+            <li class="choice-wrapper__item ">
+                <div class="fourth"><object class="inner-img__heart" data="img/svg/heart.svg"></object></div>
+                <h3 class="choice-wrapper__item__title">Любовь <br> и забота</h3>
+                <p class="choice-wrapper__item__info">Каждому ёжику мы <br> дарим много внимания</p>
+            </li>
+        </ul>
+        <div class="cards__wrapper">
+            <div class="cards__item one-card">
+                <div class="cards__inner">
+                    <h5 class="cards__item__title">Ежик <br> “Евгений”</h5>
+                    <p class="cards__item__info">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </p>
+                    <span class="cards__item__old-price">3 000 ₽</span>
+                    <span class="cards__item__new-price">1 500 ₽</span>
+                </div>
+                <div class="cards__inner">
+                    <img class="cards__item__img" src="./img/hedhehog.png" width="336px" alt="">
+                </div>
+            </div>
+            <div class="cards__item two-card">
+                <div class="cards__inner">
+                    <h5 class="cards__item__title">Ежик <br> “Максим”</h5>
+                    <p class="cards__item__info">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                    <span class="cards__item__old-price">5 000 ₽</span>
+                    <span class="cards__item__new-price">2 500 ₽</span>
+                </div>
+                <div class="cards__inner">
+                    <img class="cards__item__img" src="./img/hedhehog.png" width="336px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==================================section-questionnaire===============-->
+
+<section class="questionnaire">
+    <div class="container">
+        <div class="questionnaire_wrapper">
+                <h3 class="questionnaire-title section-title" >
+                    Заполните заявку и мы забронируем для Вас нового друга
+                </h3>
+                    <div class="wrapper">
+                        <div class="buttons-wrapper">
+                            <button class="button-hedgehog">хочу ёжика для себя</button>
+                            <button class="button-hedgehog">хочу ёжика для детей</button>
+                            <button class="button-hedgehog">хочу ёжика для разведения</button>
+                        </div>
+                        <div class="wrapper-checkbox">
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Мне нужен 1-2 ёжика</label>
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Мне нужны 3-4 ёжика</label>
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Мне нужны 3 и более ёжиков</label>
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Пока присматриваюсь</label>
+                        </div>
+                    </div>
+                    <form  class="hedgehog-form" action="">
+                        <div class="hedgehog-form__wrapper">
+                            <input class="input-name input" type="text" placeholder="Ваше имя">
+                            <input class="input-tel input" type="tel" placeholder="Ваш телефон">
+                            <input class="input-email input"type="email" placeholder="Ваш e-mail">
+                        </div>
+                            <input class="input-text input" type="text" placeholder="Комментарий к заявке">
+                    </form>
+                        <button class="section-button">Купить ёжика</button>
+                </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!--==================================section-stock=====================-->
+
+<section class="stock">
+    <div class="container">
+        <object class="hedgehog_small" data="img/svg/hedgehog_small.svg" type=""></object>
+        <div class="stock_wrapper">
+            <h4 class="stock-title">У на осталось еще: <span class="hedgehog_25">25 ёжиков</span></h4>
+        </div>
+        <p class="stock-info">Торопитесь! Акция <br> действует до 26. 02. 2023 </p>
+    </div>
+</section>
+
+<!--==================================footer=====================-->
+
+
+<footer class="footer">
+
+        <div class="big_container container ">
+            <div class="footer__wrapper">
+                <img src="img/svg/Logo_footer.svg" alt="logo-footer" class="footer-logo">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item"><a href="" class="footer-nav__item__link">Каталог</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__item__link">о нас</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__item__link">контакты</a></li>
+                    <li class="footer-nav__item"><a href="" class="footer-nav__item__link">галерея</a></li>
+                </ul>
+                <div class="footer-networks">
+                    <a href="" class="footer-contacts__link">
+                        <object class="footer-contacts__link__img" data="img/svg/tw.svg" type=""></object>
+                    </a>
+                    <a href="" class="footer-contacts__link">
+                        <object class="footer-contacts__link__img" data="img/svg/inst.svg" type=""></object>
+                    </a>
+
+                    <a href="" class="footer-contacts__link">
+                        <object class="footer-contacts__link__img" data="img/svg/fb.svg" type=""></object>
+                    </a>
+
+                </div>
+                <a href="tel:+7 (965) 569-89-98" class="footer-tel">+7 (965) 569-89-98</a>
+            </div>
+            <p class="footer_info">Все права защищены.</p>
+            <p class="footer_info">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+        </div>
+</footer>
+
+<script type="javascript" src="JS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+.footer {
+  background: #70908B;
+  padding: 19px 0 35px;
+  @media screen and (max-width: 321px) {
+    padding: 0 10px;
+  }
+}
+
+.footer-logo {
+  width: 120px;
+  height: 56px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 321px) {
+    display: flex;
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+
+.footer__wrapper {
+  @media screen and (min-width: 321px){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and (min-width: 321px){
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-self: center;
+  }
+}
+
+.footer-networks {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  float: right;
+  transform: translate(241px, -276px);
+
+  @media screen and (min-width: 321px) {
+
+    position: absolute;
+    //position: relative;
+    //align-self: center;
+    //display: flex;
+    ////position: inherit;
+    //flex-direction: row-reverse;
+    ////transform:translate(0,0);
+    ////margin-left: 100px;
+    //align-items: baseline;
+  }
+}
+
+.footer-nav__item__link {
+  font-family: 'Cormorant Infant', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.footer-tel {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  padding: 54px 0 34px;
+
+  @media screen and (min-width: 321px){
+    display: flex;
+      align-items: center;
+  }
+}
+
+.footer_info {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 131.4%;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+

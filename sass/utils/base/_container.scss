@@ -1,0 +1,18 @@
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 280px;
+  @media screen and (min-width: 321px) {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.big_container {
+  @media screen and (min-width: 758px){
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
