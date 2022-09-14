@@ -119,10 +119,8 @@ ul {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      visibility: visible; } }
-
-.header-nav__item {
-  margin-right: 80px; }
+      visibility: visible;
+      justify-content: space-between; } }
 
 .header-wrapper {
   padding: 25px 0 25px;
@@ -164,8 +162,9 @@ ul {
 
 .header-menu {
   display: flex;
-  align-items: flex-end;
-  height: max-content; }
+  justify-content: space-between;
+  margin-right: 15%;
+  gap: 40px; }
   @media screen and (max-width: 321px) {
     .header-menu {
       display: none; } }
@@ -174,6 +173,18 @@ ul {
       display: none;
       visibility: hidden; } }
 
+.header-nav__item {
+  transition: 250ms;
+  position: relative; }
+  .header-nav__item:hover:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+    border: 7px solid transparent;
+    border-left: 7px solid #195557;
+    margin-left: -30px; }
+
 .header-nav__item__link {
   font-family: 'Cormorant Infant', Arial, sans-serif;
   font-style: normal;
@@ -181,7 +192,8 @@ ul {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #195557; }
+  color: #195557;
+  transition: 250ms; }
 
 .header-nav {
   display: flex;
@@ -290,6 +302,21 @@ ul {
   background-color: #ECEFF1;
   box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2); }
 
+.header-nav__item__link--tel {
+  white-space: nowrap;
+  display: flex; }
+
+.number {
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway',Arial,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #195557; }
+
 .hero {
   padding: 7px 0 48px;
   background: #eaeeef; }
@@ -347,15 +374,6 @@ ul {
       text-align: center;
       padding: 18px  0 34px; } }
 
-.header-nav {
-  display: flex; }
-
-.header-nav_item {
-  display: flex; }
-
-.web_tel {
-  display: flex; }
-
 .hero-button {
   display: block;
   position: center;
@@ -372,21 +390,6 @@ ul {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF; }
-
-.header-nav__item__link--tel {
-  white-space: nowrap;
-  display: flex; }
-
-.number {
-  display: flex;
-  align-items: center;
-  font-family: 'Raleway',Arial,sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #195557; }
 
 .choice {
   position: relative;
