@@ -286,7 +286,7 @@ ul {
   background: #eaeeef; }
   @media screen and (min-width: 321px) {
     .hero {
-      background: url("../../../img/Subtract.png") no-repeat center/cover;
+      background: url("../img/Subtract.png") no-repeat center/cover;
       height: 1013px;
       background-origin: border-box;
       position: relative;
