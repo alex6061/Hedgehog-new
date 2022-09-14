@@ -3,7 +3,7 @@
   background:  #eaeeef;
 
   @media screen and (min-width: 321px) {
-    background: url('./../../../img/Subtract.png') no-repeat center / cover;
+    background: url('../../../img/Subtract.png') no-repeat center / cover;
     height: 1013px;
     //background-size: auto auto;
     background-origin: border-box;
@@ -11,9 +11,17 @@
     background-size: 2040px;
     //z-index: 999 !important;
   }
+  .hero::after {
+    background-image: url("../../../img/Ellipse 6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    content: '';
+
+    z-index: 15;
+  }
 }
-
-
 
 .hero-title{
   font-family: 'Cormorant Infant', serif;
@@ -26,6 +34,7 @@
     padding: 177px 0 19px;
   }
 }
+
 .hero-title__about{
   font-family: 'Cormorant Infant',serif;
   color: #70908B;
@@ -41,6 +50,7 @@
 
   }
 }
+
 .hero-title__info{
   font-family: 'Raleway',sans-serif;
   font-weight: 400;
@@ -88,7 +98,6 @@
   color: #FFFFFF;
 }
 
-
 .header-nav__item__link--tel {
   white-space: nowrap;
   display: flex;
@@ -96,7 +105,6 @@
 }
 
 .number {
-  white-space: nowrap;
   display: flex;
   align-items: center;
 
@@ -105,7 +113,6 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-
 
   text-transform: uppercase;
 
