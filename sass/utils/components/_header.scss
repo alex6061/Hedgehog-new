@@ -80,6 +80,16 @@
   }
 }
 
+.header-nav__item__link {
+  font-family: 'Cormorant Infant', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  color: #195557;
+}
 
 .header-nav {
   display: flex;
@@ -101,12 +111,16 @@
   display: flex;
 }
 
+
+
 .header-nav__item__link--tel {
   display: flex;
   background: linear-gradient(90deg, #b8d6ce, #fbedcf);
   width: 35px;
   height: 35px;
   border-radius: 50%;
+
+
   @media screen  and (min-width: 321px){
     width: 69px;
     height: 69px;
