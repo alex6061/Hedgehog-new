@@ -110,6 +110,16 @@ ul {
   .header-menu {
     display: block;
     z-index: 11; } }
+.slider-one {
+  width: 200px;
+  height: 100px;
+  background: #195557; }
+
+.slider-two {
+  width: 200px;
+  height: 100px;
+  background: darkorange; }
+
 .header-menu {
   padding: 25px 0 25px;
   display: none;
@@ -194,6 +204,8 @@ ul {
   text-transform: uppercase;
   color: #195557;
   transition: 250ms; }
+  .header-nav__item__link:hover {
+    transition: 3s; }
 
 .header-nav {
   display: flex;
@@ -316,6 +328,10 @@ ul {
   line-height: 26px;
   text-transform: uppercase;
   color: #195557; }
+
+.new__button {
+  padding: 10px 15px;
+  background: red; }
 
 .hero {
   padding: 7px 0 48px;

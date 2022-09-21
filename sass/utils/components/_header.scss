@@ -100,7 +100,9 @@
   color: #195557;
 
   transition: 250ms;
-
+  &:hover {
+    transition: 3s;
+  }
 }
 
 
@@ -118,6 +120,7 @@
 
 .header-nav_item {
   display:flex;
+
 }
 
 .web_tel {
@@ -252,6 +255,12 @@
   text-transform: uppercase;
 
   color: #195557;
+}
+
+
+.new__button {
+  padding:10px 15px;
+  background: red;
 }
 
 
