@@ -252,8 +252,7 @@
 // }
 
 // console.log(callback1)
-// console.log(callback2);``
-//
+// console.log(callback2);``//
 //
 //
 // const r1 = filter ([1,2,3,4,5,6,8,7,9], value => value >=3);

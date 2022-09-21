@@ -356,6 +356,9 @@ ul {
   font-family: 'Cormorant Infant', serif;
   font-size: 50px;
   color: #195557; }
+  @media screen and (min-width: 362px) {
+    .hero-title {
+      font-size: 40px; } }
   @media screen and (min-width: 321px) {
     .hero-title {
       display: block;
@@ -606,11 +609,11 @@ ul {
 
 .cards__item {
   display: block; }
-  @media screen and (min-width: 321px) {
+  @media screen and (min-width: 600px) {
     .cards__item {
       display: flex; } }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 600px) {
   .cards__inner {
     display: block; } }
 
@@ -647,7 +650,10 @@ ul {
 
 .cards__item__img {
   width: 100px; }
-  @media screen and (min-width: 321px) {
+  @media screen and (min-width: 500px) {
+    .cards__item__img {
+      width: 300px; } }
+  @media screen and (min-width: 800px) {
     .cards__item__img {
       width: 500px; } }
 
@@ -659,7 +665,7 @@ ul {
       background: #FFFFFF;
       display: block; } }
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 740px) {
   .questionnaire_wrapper {
     background: #EAEEEF;
     padding: 39px 49px;

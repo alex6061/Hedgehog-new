@@ -221,7 +221,7 @@
   padding: 54px 59px;
   display: grid;
 
-  @media screen and (min-width: 321px){
+  @media screen and (min-width: 600px){
 
   }
 }
@@ -242,13 +242,13 @@
 
 .cards__item {
   display: block;
-  @media screen and (min-width: 321px){
+  @media screen and (min-width: 600px){
     display: flex;
   }
 }
 
 .cards__inner {
-  @media screen and (min-width: 320px){
+  @media screen and (min-width: 600px){
     display: block;
   }
 }
@@ -293,8 +293,10 @@
 
 .cards__item__img{
   width: 100px;
-
-  @media screen and (min-width: 321px) {
+  @media screen and (min-width: 500px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 800px) {
     width: 500px;
   }
 }
