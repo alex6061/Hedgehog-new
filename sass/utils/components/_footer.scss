@@ -1,8 +1,11 @@
 .footer {
   background: #70908B;
-  padding: 19px 0 35px;
-  @media screen and (max-width: 670px) {
-    padding: 0 10px;
+  padding: 19px 10px 35px;
+  @media screen and (min-width: 678px) {
+    padding: 20px 40px 35px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 20px 60px 35px;
   }
 }
 
@@ -10,7 +13,7 @@
   width: 120px;
   height: 56px;
   margin-bottom: 60px;
-  @media screen and (min-width: 670px) {
+  @media screen and (min-width: 678px) {
     display: flex;
     align-self: center;
     margin-bottom: 0;
@@ -18,10 +21,12 @@
 }
 
 .footer__wrapper {
-  @media screen and (min-width: 670px){
+
+  @media screen and (min-width: 678px){
     display: flex;
     justify-content: space-between;
   }
+
 }
 
 .footer-nav {
@@ -31,10 +36,13 @@
   @media screen and (min-width: 670px){
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    //gap: 50px;
     align-self: center;
+    max-width: 555px;
   }
 }
+
+
 
 .footer-networks {
   display: flex;

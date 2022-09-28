@@ -573,18 +573,18 @@ ul {
   margin-top: 92px;
   display: flex;
   gap: 43px;
-  flex-direction: column; }
-  @media screen and (min-width: 321px) {
+  flex-wrap: wrap; }
+  @media screen and (min-width: 1200px) {
     .cards__wrapper {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       flex-wrap: wrap; } }
   @media screen and (min-width: 1316px) {
     .cards__wrapper {
-      display: flex;
-      gap: 20px;
-      width: 100%;
-      max-width: 1800px; } }
+      display: grid;
+      grid-gap: 20px;
+      grid-template-rows: 1fr 1fr;
+      width: 100%; } }
 
 .cards__item {
   border-radius: 20px;
@@ -670,7 +670,7 @@ ul {
   @media screen and (max-width: 740px) {
     .questionnaire_wrapper {
       background: #EAEEEF;
-      padding: 39px 10px;
+      padding: 39px 20px;
       border-radius: 30px; } }
   @media screen and (min-width: 670px) {
     .questionnaire_wrapper {
@@ -864,22 +864,25 @@ ul {
 
 .footer {
   background: #70908B;
-  padding: 19px 0 35px; }
-  @media screen and (max-width: 670px) {
+  padding: 19px 10px 35px; }
+  @media screen and (min-width: 678px) {
     .footer {
-      padding: 0 10px; } }
+      padding: 20px 40px 35px; } }
+  @media screen and (min-width: 1200px) {
+    .footer {
+      padding: 20px 60px 35px; } }
 
 .footer-logo {
   width: 120px;
   height: 56px;
   margin-bottom: 60px; }
-  @media screen and (min-width: 670px) {
+  @media screen and (min-width: 678px) {
     .footer-logo {
       display: flex;
       align-self: center;
       margin-bottom: 0; } }
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 678px) {
   .footer__wrapper {
     display: flex;
     justify-content: space-between; } }
@@ -892,8 +895,8 @@ ul {
     .footer-nav {
       display: flex;
       flex-direction: row;
-      gap: 50px;
-      align-self: center; } }
+      align-self: center;
+      max-width: 555px; } }
 
 .footer-networks {
   display: flex;
