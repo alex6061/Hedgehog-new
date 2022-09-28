@@ -154,30 +154,32 @@
 
 //11 Объекты
 // в объект группируются элементы массива
-const person = {
-    firstName: 'Garkusha',
-    lastName: 'Alex',
-    year: 1991,
-    languages: ['ru','eng','De'],
-    hasWife: false,
-    greet: function() {
-        console.log('greet from person')
-    }
-}
+// const person = {
+//     firstName: 'Garkusha',
+//     lastName: 'Alex',
+//     year: 1991,
+//     languages: ['ru','eng','De'],
+//     hasWife: false,
+//     greet: function() {
+//         console.log('greet from person')
+//     }
+// }
 
-console.log(person.languages[1])
-console.log(person)
-const key = 'year'
-console.log(person[key])
-person.greet()
 
-person.isprogrammer = true
-
-person.town = 'China'
-person.city = 'Peking'
-
-console.log(person)
-
+//
+// console.log(person.languages[1])
+// console.log(person)
+// const key = 'year'
+// console.log(person[key])
+// person.greet()
+//
+// person.isprogrammer = true
+//
+// person.town = 'China'
+// person.city = 'Peking'
+//
+// console.log(person)
+//
 
 
 

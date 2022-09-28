@@ -110,16 +110,6 @@ ul {
   .header-menu {
     display: block;
     z-index: 11; } }
-.slider-one {
-  width: 200px;
-  height: 100px;
-  background: #195557; }
-
-.slider-two {
-  width: 200px;
-  height: 100px;
-  background: darkorange; }
-
 .header-menu {
   padding: 25px 0 25px;
   display: none;
@@ -420,6 +410,22 @@ ul {
       z-index: 1 !important;
       position: relative; } }
 
+.choice-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 321px) {
+    .choice-wrapper {
+      display: flex;
+      justify-content: space-evenly; } }
+
+.choice-wrapper__item:nth-child(1) {
+  position: relative;
+  top: 38px; }
+
+.choice-wrapper__item:nth-child(4) {
+  position: relative;
+  top: 38px; }
+
 @media screen and (max-width: 1760px) {
   .left_hedgehog {
     visibility: hidden;
@@ -445,24 +451,6 @@ ul {
     top: -299px;
     /* left: 1820px; */
     float: right; } }
-
-.choice-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  @media screen and (min-width: 321px) {
-    .choice-wrapper {
-      display: flex;
-      gap: 190px;
-      justify-content: center; } }
-
-.choice-wrapper__item:nth-child(1) {
-  position: relative;
-  top: 38px; }
-
-.choice-wrapper__item:nth-child(4) {
-  position: relative;
-  top: 38px; }
 
 .first {
   display: block;
@@ -557,19 +545,23 @@ ul {
 .choice-wrapper__item__title {
   margin: 18px 0 10px;
   font-family: 'Cormorant Infant', serif;
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #195557; }
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: #195557;
+  text-align: center; }
 
 .choice-wrapper__item__info {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 159.9%;
-  color: #195557; }
+  font-size: 14px;
+  line-height: 22px;
+  color: #195557;
+  text-align: center; }
 
 .cards {
   display: flex;
@@ -580,16 +572,19 @@ ul {
 .cards__wrapper {
   margin-top: 92px;
   display: flex;
-  gap: 43px; }
+  gap: 43px;
+  flex-direction: column; }
   @media screen and (min-width: 321px) {
     .cards__wrapper {
       display: flex;
-      flex-direction: row; } }
-  @media screen and (max-width: 1316px) {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 1316px) {
     .cards__wrapper {
       display: flex;
-      flex-direction: column;
-      gap: 20px; } }
+      gap: 20px;
+      width: 100%;
+      max-width: 1800px; } }
 
 .cards__item {
   border-radius: 20px;
@@ -605,6 +600,7 @@ ul {
 
 .two-card {
   background: #E2F0DF;
+  box-shadow: 4px 4px 40px #F1F1F1;
   background: linear-gradient(-45deg, transparent 60px, #E2F0DF 0); }
 
 .cards__item {
@@ -627,6 +623,8 @@ ul {
   margin-bottom: 17px; }
 
 .cards__item__info {
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -655,26 +653,30 @@ ul {
       width: 300px; } }
   @media screen and (min-width: 800px) {
     .cards__item__img {
-      width: 500px; } }
+      width: 300px; } }
 
-.questionnaire {
-  padding: 41px 39px;
-  background: #EAEEEF; }
+@media screen and (min-width: 670px) {
+  .questionnaire {
+    display: block; } }
+@media screen and (min-width: 320px) {
+  .questionnaire .container {
+    width: 100%; } }
+
+.questionnaire_wrapper {
+  padding: 0 21px; }
+  @media screen and (min-width: 740px) {
+    .questionnaire_wrapper {
+      padding: 39px 49px; } }
+  @media screen and (max-width: 740px) {
+    .questionnaire_wrapper {
+      background: #EAEEEF;
+      padding: 39px 10px;
+      border-radius: 30px; } }
   @media screen and (min-width: 670px) {
-    .questionnaire {
-      background: #FFFFFF;
-      display: block; } }
-
-@media screen and (min-width: 740px) {
-  .questionnaire_wrapper {
-    background: #EAEEEF;
-    padding: 39px 49px;
-    border-radius: 30px; } }
-@media screen and (max-width: 670px) {
-  .questionnaire_wrapper {
-    height: max-content;
-    background: #eaeeef;
-    border-radius: 30px; } }
+    .questionnaire_wrapper {
+      height: max-content;
+      background: #eaeeef;
+      border-radius: 30px; } }
 
 .questionnaire-title {
   font-family: 'Cormorant Infant',Arial, sans-serif;

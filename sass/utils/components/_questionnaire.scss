@@ -1,19 +1,28 @@
 .questionnaire {
-  padding: 41px 39px;
-  background: #EAEEEF;
+  //padding: 41px 39px;
+  //background: #EAEEEF;
   @media screen  and (min-width:670px){
-    background: #FFFFFF;
+    //background: #FFFFFF;
     display: block;
+  }
+  @media screen and (min-width: 320px) {
+    .container {
+      width: 100%;
+    }
   }
 }
 
 .questionnaire_wrapper {
-  @media screen and (min-width: 740px) {
+  padding:  0 21px;
+  @media screen and (min-width:740px ){
+  padding: 39px 49px;
+  }
+  @media screen and (max-width: 740px) {
     background: #EAEEEF;
-    padding: 39px 49px;
+    padding: 39px 10px;
     border-radius: 30px;
   }
-  @media screen  and (max-width:670px){
+  @media screen  and (min-width:670px){
     height: max-content;
     background: #eaeeef ;
     border-radius: 30px;
@@ -35,6 +44,8 @@
     line-height: 54px;
   }
 }
+
+
 
 .second_wrapper {
   @media screen and (min-width: 670px) {

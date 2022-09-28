@@ -267,6 +267,177 @@
 // console.log(r3);
 //
 // const getFruitsWithQuantity = fruit => fruit.quantity >= 120;
+//
+// $(".autoplay").slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 1000
+// });
+
+
+
+//
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//         console.log(`showTAg -> this`, this);
+//     },
+// };
+//
+// user.showTag();
+
+
+
+ //
+ //
+ // console.log( '[] === []: ', [] === []);
+ // console.log( `{} === {}: `, {} === {});
+ //
+ //
+ //    console.log(
+ //        'function() {} === function () {}: ',
+ //        function () {} === function () {} ,
+ //        );
+ //
+ //
+ //    const fnA = function () {
+ //        console.log('hello');
+ //    };
+ //
+ //    const fnB = fnA;
+ //
+ //    console.log(`fnB === fnA: `, fnB === fnA);
+
+
+// const foo = function () {
+//     console.log('foo -> this', this);
+// };
+//
+// foo();
+
+//
+//
+// const showTag = function () {
+//     console.log(`showTag -> this`, this);
+//     console.log(`showTag -> this.tag`, this.tag);
+// }
+//
+//
+
+// const user = {
+//     tag: 'Mango',
+//     showTAg() {
+//         console.log(`showTag -> this`, this);
+//         console.log('showTag -> this.tag', this.tag)
+//     }
+// }
+
+//
+// const invokeAction = function (action) {
+//     console.log(action);
+//
+//     action();
+// }
+//
+// invokeAction(user.showTag())
+
+
+// const bookShelf = {
+//     authors: ["111", "222"],
+//     getAuthors() {
+//         return this.authors;
+//     },
+//
+//     addAuthor(authorName) {
+//         this.authors.push(authorName);
+//     },
+// };
+//
+// console.log(bookShelf.getAuthors());
+// bookShelf.addAuthor("Ли Танит");
+// console.log(bookShelf.getAuthors());
+
+
+
+// const makeChangeColor = function () {
+//     const changeColor = function (color) {
+//         console.log('changeColor -> this', this)
+//     }
+//
+// const sweater = {
+//     color: 'teal',
+// }
+//
+// sweater.updateColor = changeColor
+//
+// return sweater.updateColor
+//
+// }
+//
+// const swapColor = makeChangeColor();
+//
+// swapColor('blue')
+
+
+function Human(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.sayHello = function () {
+        console.log(`Hellow my name is ${this.name}`);
+    };
+    this.birthday = function () {
+        this.age++;  // +=1
+    };
+
+}
+//
+// const bobby = {
+//     name: 'Bobby',
+//     age: 15,
+// }
+//
+//
+// const peter = {
+//     name: '{Peter}',
+//     age: 20,
+// }
+
+// const bobby = new Human('bobby', 15);
+// const peter = new Human('peter', 20);
+//
+// console.log(bobby);
+// console.log(peter);
+
+// bobby.sayHello();
+
+// bobby.birthday();
+// console.log(bobby.age);
+
+const animal = {
+    legs: 4,
+};
+
+const cat = Object.create(animal);
+cat.eyes = `yellow`;
+cat.legs = 3;
+
+console.log(cat.legs);
+console.log(cat.legs);
+console.log(cat.eyes);
+
+console.log(cat.__proto__.legs);
+
+
+
+
+
+
+
 
 
 
